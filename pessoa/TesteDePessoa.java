@@ -2,21 +2,22 @@ package pessoa;
 
 public class TesteDePessoa {
     public static void main(String[] args) {
-        Pessoa pessoa1 = new Pessoa();
+        Professor professor = new Professor();
 
-        pessoa1.cpf = "33322211";
-        pessoa1.nome = "Daniele";
-        pessoa1.idade = 33;
+        professor.setCpf("33322211");
+        professor.setNome("Daniele");
+        professor.setIdade(33);
+        professor.setSalario(50000);
 
-        System.out.println(pessoa1.imprimirDadosDaPessoa(1));
+        System.out.println(professor.imprimirDadosDaPessoa());
 
-        Pessoa pessoa2 = new Pessoa();
+        Aluno aluno = new Aluno();
 
-        pessoa2.cpf = "111123232323";
-        pessoa2.nome = "Maria";
-        pessoa2.idade = 19;
+        aluno.setCpf("11112323");
+        aluno.setNome("Fernanda");
+        aluno.setIdade(19);
+        aluno.setMatricula("23230");
 
-        System.out.println(pessoa2.imprimirDadosDaPessoa(2));
-
+        System.out.println(aluno.imprimirDadosDaPessoa());
     }
 }
